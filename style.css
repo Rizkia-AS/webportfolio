@@ -1,0 +1,232 @@
+/*css reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*akhir css reset*/
+
+
+.container {
+	width: 79.6%;
+	margin: 0px auto;
+
+}
+
+.more {
+	margin-left: 81%;
+}
+
+
+/*awal navbar*/
+.navbar {
+	height: 65px;
+	background-color: blue;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+}
+
+.logo {
+	background-color: salmon;
+	align-self: center;
+}
+
+.qa {
+	display: flex;
+	background-color: lime;
+	align-self: center;
+	justify-content:space-around;
+}
+/*akhir navbar*/
+
+
+
+
+
+/*awal intro*/
+.intro {
+	height: 319px;
+	box-sizing: border-box;
+	background-color: salmon;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+}
+
+.rizkia {
+	background-color: aqua;
+	align-self: center;
+	/*justify-self: center;*/
+	margin-left: 17%;
+}
+
+div .rizkia p {
+	margin-bottom: 47px;
+}
+
+.hello {
+	background-color: lime;
+	align-self: center;
+	justify-content:;
+
+	display: grid;
+	grid-template-rows: 1fr 0.3fr;
+}
+
+.hello p {
+	margin: 0px;
+	margin-left: 18%;
+}
+
+p.hellotext  {
+	margin-bottom: 52px;
+	
+	}
+
+.moreintro {
+	background-color: aqua;
+/*	text-align: center;*/
+	margin-left: 62%;
+}
+
+/*akhir intro*/
+
+
+
+
+
+/*service bar*/
+.service {
+	background-color: blue;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skillbox {
+	background-color: aqua;
+	text-align: center;
+
+	border: 3px solid lime;
+	border-radius: 5px;
+	justify-content: center;
+	width: 79%;
+	height: 228px;
+	margin-left: 6.25%;
+	margin-bottom: 30px ;
+	margin-top: 30px;
+}
+
+/*akhir service bar*/
+
+
+
+
+
+/*awal my work*/
+.workdisplay {
+	background-color: salmon;
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	box-sizing: border-box;
+
+	display: grid;
+	justify-items: center; 
+	grid-template-columns: repeat(auto-fit, minmax(263px, 1fr));
+	grid-gap: 30px;
+
+}
+
+.workthumb {
+	width: 100%;
+	margin-bottom: 30px;
+
+}
+
+.workthumb img {
+	width: 100%;
+	border-radius: 8px;
+
+}
+
+.visit {
+	background-color: salmon;
+	display: grid;
+	justify-items: end;
+}
+
+.visit img {
+	border: 3px solid black;
+
+}
+
+/*akhir my work*/
+
+.reviewdisplay {
+	background-color: salmon;
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	box-sizing: border-box;
+
+	display: grid;
+	justify-items: center; 
+	grid-template-columns: repeat(auto-fit, minmax(399px, 1fr));
+	/*grid-template-columns: 1fr 1fr;*/
+	grid-gap: 30px;
+}
+
+.review {
+	width: 91.6%;
+	height: 96px;
+	margin-bottom: 30px;
+	background-color: white;
+}
