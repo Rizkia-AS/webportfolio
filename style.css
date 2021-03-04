@@ -51,6 +51,51 @@ table {
 
 /*akhir css reset*/
 
+/*awal all*/
+h1, h2, h3, p, a {
+	color: white;
+}
+
+h1 {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 140px;
+
+}
+
+h2 {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 70px;
+	color:#90DDEB;
+	filter: drop-shadow(0px 0px 9px #01C8EE);
+
+}
+
+h3 {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 20px;
+}
+
+p {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 17px;
+
+}
+
+a {
+	font-family: 'Orbitron', sans-serif;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+span {
+	font-family: 'Orbitron', sans-serif;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+body {
+	background-color: black;
+}
 
 .container {
 	width: 79.6%;
@@ -62,11 +107,40 @@ table {
 	margin-left: 81%;
 }
 
+.more a {
+	color: #7E7E7E;
+	transition: 0.15s;
+}
+
+.more:hover a {
+	color: #90DDEB;
+	filter: drop-shadow(0px 0px 9px #01C8EE);
+}
+
+.line {
+	background-color: #FA7EFF;
+	height: 6px;
+	margin-top: 10px;
+	margin-right: 59.5%;
+	border: 1px solid rgb(245 0 245 23%);
+	border-radius: 8px;
+	filter: drop-shadow(0px 0px 8px #F500FE);
+
+}
+
+.intro .line {
+	margin-right: 16.2%;
+}
+
+/*akhir all*/
+
+
+
 
 /*awal navbar*/
 .navbar {
 	height: 65px;
-	background-color: blue;
+/*	background-color: blue;*/
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -74,16 +148,40 @@ table {
 }
 
 .logo {
-	background-color: salmon;
+	/*background-color: salmon;*/
 	align-self: center;
+}
+
+.logo h3 {
+	color: #FA7EFF;
+	filter: drop-shadow(0px 0px 9px #F500FE);
 }
 
 .qa {
 	display: flex;
-	background-color: lime;
+	/*background-color: yellow;*/
 	align-self: center;
 	justify-content:space-around;
 }
+
+
+.qabutton {
+/*	background-color: lime;*/
+	padding: 5px;
+	border-radius: 5px;
+	color: #7E7E7E;
+
+	transition: 0.15s;
+}
+
+
+.qabutton:hover {
+	color: #90DDEB;
+	filter: drop-shadow(0px 0px 9px #01C8EE);
+	transform: scale(1.1);
+}
+
+
 /*akhir navbar*/
 
 
@@ -93,8 +191,9 @@ table {
 /*awal intro*/
 .intro {
 	height: 319px;
+	margin-bottom: 96px;
 	box-sizing: border-box;
-	background-color: salmon;
+	/*background-color: salmon;*/
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -102,7 +201,7 @@ table {
 }
 
 .rizkia {
-	background-color: aqua;
+	background-color: black;
 	align-self: center;
 	/*justify-self: center;*/
 	margin-left: 17%;
@@ -113,7 +212,7 @@ div .rizkia p {
 }
 
 .hello {
-	background-color: lime;
+	/*background-color: lime;*/
 	align-self: center;
 	justify-content:;
 
@@ -131,10 +230,10 @@ p.hellotext  {
 	
 	}
 
-.moreintro {
-	background-color: aqua;
-/*	text-align: center;*/
+.more.bio {
+	/*background-color: aqua;*/
 	margin-left: 62%;
+
 }
 
 /*akhir intro*/
@@ -145,24 +244,65 @@ p.hellotext  {
 
 /*service bar*/
 .service {
-	background-color: blue;
+	margin-bottom: 96px;
+	background-color: black;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .skillbox {
-	background-color: aqua;
-	text-align: center;
-
-	border: 3px solid lime;
-	border-radius: 5px;
-	justify-content: center;
 	width: 79%;
 	height: 228px;
-	margin-left: 6.25%;
-	margin-bottom: 30px ;
+
 	margin-top: 30px;
+	margin-bottom: 30px ;
+	margin-left: 6.25%;
+	padding-top: 8.7%;
+
+	border: 5px solid #7E7E7E;
+	border-radius: 16px;
+	box-sizing: border-box;
+
+/*	background-color: black;*/
+	text-align: center;	
+	
+	color: #7E7E7E;
+
+	transition: 0.3s;
 }
+
+.skillbox h1, .skillbox h3 {
+	color:#7E7E7E;
+}
+
+
+.skillbox:hover{
+	border: 5px solid #90DDEB;
+	filter: drop-shadow(0px 0px 9px #01C8EE);
+	transform: scale(1.1);
+}
+
+.skillbox.b:hover {
+	border: 5px solid #E98673;
+	filter: drop-shadow(0px 0px 9px #EE2701);
+	transform: scale(1.1);
+}
+
+.skillbox:hover h1, .skillbox:hover h3 {
+	color:#90DDEB;
+	filter: drop-shadow(0px 0px 9px #01C8EE);
+
+}
+
+.skillbox.b:hover h1, .skillbox.b:hover h3 {
+	color:#E98673;
+	filter: drop-shadow(0px 0px 9px #EE2701);
+
+}
+
+
+			
+
 
 /*akhir service bar*/
 
@@ -172,7 +312,8 @@ p.hellotext  {
 
 /*awal my work*/
 .workdisplay {
-	background-color: salmon;
+	margin-top: 30px;
+	/*background-color: salmon;*/
 	padding-top: 30px;
 	padding-left: 30px;
 	padding-right: 30px;
@@ -186,9 +327,20 @@ p.hellotext  {
 }
 
 .workthumb {
+	/*background-color: lime;*/
 	width: 100%;
 	margin-bottom: 30px;
 
+	transition: 0.3s;
+
+}
+
+.workthumb a {
+	font-size: 17px;
+}
+
+.workthumb:hover {
+	transform: scale(1.1);
 }
 
 .workthumb img {
@@ -198,12 +350,15 @@ p.hellotext  {
 }
 
 .visit {
-	background-color: salmon;
+	margin-top: 67px;
+	margin-bottom: 96px;
+	/*background-color: salmon;*/
 	display: grid;
 	justify-items: end;
 }
 
 .visit img {
+	margin-top: 13px;
 	border: 3px solid black;
 
 }
@@ -211,7 +366,8 @@ p.hellotext  {
 /*akhir my work*/
 
 .reviewdisplay {
-	background-color: salmon;
+	margin-top: 30px;
+	background-color: black;
 	padding-top: 30px;
 	padding-left: 30px;
 	padding-right: 30px;
@@ -228,5 +384,11 @@ p.hellotext  {
 	width: 91.6%;
 	height: 96px;
 	margin-bottom: 30px;
-	background-color: white;
+	/*background-color: yellow;*/
+	padding: 5px;
+	color: white;
+
+	border-radius: 5px;
+	border: 5px solid #90DDEB;
+	filter: drop-shadow(0px 0px 9px #01C8EE);
 }
