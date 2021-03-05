@@ -52,6 +52,7 @@ table {
 /*akhir css reset*/
 
 /*awal all*/
+
 h1, h2, h3, p, a {
 	color: white;
 }
@@ -93,13 +94,14 @@ span {
 	font-size: 20px;
 }
 
+
 body {
 	background-color: black;
 }
 
 .container {
-	width: 79.6%;
-	margin: 0px auto;
+	margin-left: 10.17%;
+	margin-right: 10.17%;
 
 }
 
