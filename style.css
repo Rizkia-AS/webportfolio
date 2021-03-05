@@ -104,6 +104,7 @@ body {
 }
 
 .more {
+	margin-top: 10px;
 	margin-left: 81%;
 }
 
@@ -122,7 +123,7 @@ body {
 	height: 6px;
 	margin-top: 10px;
 	margin-right: 59.5%;
-	border: 1px solid rgb(245 0 245 23%);
+	border: 1px solid rgba(245, 0, 245, 0.5);
 	border-radius: 8px;
 	filter: drop-shadow(0px 0px 8px #F500FE);
 
@@ -132,6 +133,17 @@ body {
 	margin-right: 16.2%;
 }
 
+/*background*/
+.bg {
+	position: fixed;
+	width: 100%;
+	/*margin-right: 1%;
+	margin-left: 1%;*/
+	z-index: -999;
+}
+/*akhir background*/
+
+
 /*akhir all*/
 
 
@@ -139,11 +151,23 @@ body {
 
 /*awal navbar*/
 .navbar {
-	height: 65px;
+	display: grid;
+	height: 45px;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	background-color: rgb(0 0 0);
+	align-content: center;
+
+}
+
+.nav {
 /*	background-color: blue;*/
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	margin: 0px auto;
+	width: 79.6%;
 
 }
 
@@ -192,6 +216,7 @@ body {
 .intro {
 	height: 319px;
 	margin-bottom: 96px;
+	padding-top: 47px;
 	box-sizing: border-box;
 	/*background-color: salmon;*/
 
@@ -201,7 +226,7 @@ body {
 }
 
 .rizkia {
-	background-color: black;
+	/*background-color: black;*/
 	align-self: center;
 	/*justify-self: center;*/
 	margin-left: 17%;
@@ -245,7 +270,7 @@ p.hellotext  {
 /*service bar*/
 .service {
 	margin-bottom: 96px;
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.5);
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
@@ -299,10 +324,6 @@ p.hellotext  {
 	filter: drop-shadow(0px 0px 9px #EE2701);
 
 }
-
-
-			
-
 
 /*akhir service bar*/
 
@@ -359,15 +380,19 @@ p.hellotext  {
 
 .visit img {
 	margin-top: 13px;
-	border: 3px solid black;
 
 }
 
 /*akhir my work*/
 
+
+
+
+/*awal reviews*/
+
 .reviewdisplay {
 	margin-top: 30px;
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.5);
 	padding-top: 30px;
 	padding-left: 30px;
 	padding-right: 30px;
@@ -388,7 +413,9 @@ p.hellotext  {
 	padding: 5px;
 	color: white;
 
-	border-radius: 5px;
+	border-radius: 16px;
 	border: 5px solid #90DDEB;
 	filter: drop-shadow(0px 0px 9px #01C8EE);
 }
+
+/*akhir reviews*/
