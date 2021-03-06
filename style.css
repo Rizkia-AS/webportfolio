@@ -99,6 +99,24 @@ body {
 	background-color: black;
 }
 
+@media all and (max-width: 767px) {
+	h1{
+		font-size: 110px;
+	}
+
+	h2{
+		font-size: 55px;
+	}
+
+	h3{
+		font-size: 18px;
+	}
+
+	p{
+		font-size: 16px;
+	}
+}
+
 .container {
 	margin-left: 10.17%;
 	margin-right: 10.17%;
@@ -106,7 +124,7 @@ body {
 }
 
 .more {
-	margin-top: 10px;
+	margin-top: 30px;
 	margin-left: 81%;
 }
 
@@ -143,6 +161,38 @@ body {
 	margin-left: 1%;*/
 	z-index: -999;
 }
+
+@media all and (min-width: 768px){
+	.bgp {
+	display: none;
+	}
+}
+
+
+@media all and (max-width: 767px) {
+	.container {
+		margin: 0px auto;
+	}
+
+	.bg{
+		display: none;
+	}
+
+	.bgp {
+	position: fixed;
+	width: 100%;
+	/*margin-right: 1%;
+	margin-left: 1%;*/
+	z-index: -999;
+	}
+
+	.more {
+	margin-top: 10px;
+	margin-left: 80%;
+	}
+
+}
+
 /*akhir background*/
 
 
@@ -178,10 +228,15 @@ body {
 	align-self: center;
 }
 
+.logo img {
+	display: none;
+}
+
 .logo h3 {
 	color: #FA7EFF;
 	filter: drop-shadow(0px 0px 9px #F500FE);
 }
+
 
 .qa {
 	display: flex;
@@ -190,6 +245,9 @@ body {
 	justify-content:space-around;
 }
 
+.qa img {
+	display: none;
+}
 
 .qabutton {
 /*	background-color: lime;*/
@@ -207,7 +265,50 @@ body {
 	transform: scale(1.1);
 }
 
+@media all and (max-width: 767px){
+	.nav {
+		display: flex;
+	}
+	.logo {
+		width: 100%;
+		/*background-color: lime;*/
+		display: flex;
+		justify-content: space-between;
+	}
 
+	.logo img {
+		display:block;
+
+	}
+
+	.qa {
+		background-color: aqua;
+		display: flex;
+		width: 40%;
+		height: 379px;
+		box-sizing: border-box;
+		flex-direction: column;
+		align-self: space-between; 
+		margin-top: 290px;
+		position: absolute;
+		right: -40%;
+		z-index: 9999;
+		text-align: center;
+
+		transition: 0.5s;
+	}
+
+	.qa:target { 
+		right: 0%;
+
+	}
+
+	.qa a img {
+		display: inline-block;
+		margin-right: -29%;
+	}
+
+}
 /*akhir navbar*/
 
 
@@ -224,6 +325,10 @@ body {
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 
+	'rizkia hello'
+	'more more'
 
 }
 
@@ -258,11 +363,40 @@ p.hellotext  {
 	}
 
 .more.bio {
+	grid-area: more;
 	/*background-color: aqua;*/
-	margin-left: 62%;
+	margin-top: 10px;
+	margin-left: 81%;
 
 }
 
+
+@media all and (max-width: 767px){
+	.intro {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.rizkia{
+		/*background-color: black;*/
+		align-self: start;
+		margin-left: 8.6%;
+	}
+
+	.hello {
+		display: none;
+	}
+
+	.more.bio {
+	/*grid-area: more;*/
+	/*background-color: aqua;*/
+	margin-top: 20px;
+	margin-right: 20%;
+
+}
+
+}
 /*akhir intro*/
 
 
@@ -273,6 +407,7 @@ p.hellotext  {
 .service {
 	margin-bottom: 96px;
 	background-color: rgba(0, 0, 0, 0.5);
+	/*background-color: salmon;*/
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
@@ -327,6 +462,19 @@ p.hellotext  {
 
 }
 
+
+@media all and (max-width: 767px){
+	.service {
+		display: flex;
+		flex-direction: column;
+		padding-top: 20px;
+	}
+
+	.skillbox {
+		margin: auto;
+		margin-bottom: 20px;
+	}
+}
 /*akhir service bar*/
 
 
@@ -385,6 +533,25 @@ p.hellotext  {
 
 }
 
+@media all and (max-width: 767px) {
+	.myworktitle {
+		margin-left: 8.6%;
+	}
+	.workdisplay {
+		margin-top: 20px;
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.workthumb {
+		margin-bottom: 20px;
+	}
+
+	.visit {
+		justify-items: center;
+	}
+}
 /*akhir my work*/
 
 
@@ -395,6 +562,7 @@ p.hellotext  {
 .reviewdisplay {
 	margin-top: 30px;
 	background-color: rgba(0, 0, 0, 0.5);
+	/*background-color: salmon;*/
 	padding-top: 30px;
 	padding-left: 30px;
 	padding-right: 30px;
@@ -420,4 +588,21 @@ p.hellotext  {
 	filter: drop-shadow(0px 0px 9px #01C8EE);
 }
 
+@media all and (max-width: 767px) {
+	.reviewstitle {
+		margin-left: 8.6%;
+	}
+
+	.reviewdisplay {
+		padding-top: 20px;
+		padding-left: 4.6%;
+		padding-right: 4.6%;
+
+		grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+	}
+
+	.review {
+		margin-bottom: 20px;
+	}
+}
 /*akhir reviews*/
