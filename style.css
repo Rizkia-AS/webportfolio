@@ -406,42 +406,32 @@ p.hellotext  {
 /*service bar*/
 .service {
 	margin-bottom: 96px;
-	/*background-color: rgba(0, 0, 0, 0.5);*/
-	background-color: salmon;
-	/*display: grid;
-	grid-template-columns: 1fr 1fr 1fr;*/
-	display: flex;
-	/*justify-content: space-around;*/
-
+	background-color: rgba(0, 0, 0, 0.5);
+	/*background-color: salmon;*/
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .skillbox {
-	/*width: 79%;*/
-	flex: 1;
-	/*width: 100%;*/
+	width: 79%;
 	height: 228px;
 
 	margin-top: 30px;
 	margin-bottom: 30px ;
-	/*margin-left: 6.25%;*/
-	/*justify-self: center;*/
-
+	margin-left: 6.25%;
+	padding-top: 8.7%;
 
 	border: 5px solid #7E7E7E;
 	border-radius: 16px;
 	box-sizing: border-box;
 
 /*	background-color: black;*/
+	text-align: center;	
+	
 	color: #7E7E7E;
 
 	transition: 0.3s;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
 }
-
 
 .skillbox h1, .skillbox h3 {
 	color:#7E7E7E;
