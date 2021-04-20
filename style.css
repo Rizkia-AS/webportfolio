@@ -286,11 +286,11 @@ body {
 		background-color: black;
 		display: flex;
 		width: 40%;
-		height: 379px;
+		height: 279px;
 		box-sizing: border-box;
 		flex-direction: column;
 		align-self: space-between; 
-		margin-top: 290px;
+		margin-top: 240px;
 		position: absolute;
 		right: -40%;
 		z-index: 9999;
@@ -299,12 +299,12 @@ body {
 		transition: 0.5s;
 	}
 
-	.qa:target { 
+	.show { 
 		right: 0%;
 
 	}
 
-	.qa a img {
+	.qa div img {
 		display: inline-block;
 		margin-right: -29%;
 	}
