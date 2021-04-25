@@ -51,75 +51,23 @@ table {
 
 /*akhir css reset*/
 
+
+
+
+
 /*awal all*/
 
-h1, h2, h3, p, a {
-	color: white;
-}
-
-h1 {
-	font-family: 'Orbitron', sans-serif;
-	font-size: 140px;
-
-}
-
-h2 {
-	font-family: 'Orbitron', sans-serif;
-	font-size: 70px;
-	color:#90DDEB;
-	filter: drop-shadow(0px 0px 9px #01C8EE);
-
-}
-
-h3 {
-	font-family: 'Orbitron', sans-serif;
-	font-size: 20px;
-}
-
-p {
-	font-family: 'Railway', sans-serif;
-	font-size: 17px;
-
-}
-
-a {
-	font-family: 'Orbitron', sans-serif;
-	text-decoration: none;
-	font-size: 20px;
-}
-
-span {
-	font-family: 'Orbitron', sans-serif;
-	text-decoration: none;
-	font-size: 20px;
-}
-
-
-body {
-	background-color: black;
-}
-
-@media all and (max-width: 767px) {
-	h1{
-		font-size: 110px;
-	}
-
-	h2{
-		font-size: 55px;
-	}
-
-	h3{
-		font-size: 18px;
-	}
-
-	p{
-		font-size: 16px;
-	}
-}
 
 .container {
 	margin-left: 10.17%;
 	margin-right: 10.17%;
+
+}
+
+@media all and (max-width: 767px) {
+	.container {
+		margin: 0px auto;
+	}
 
 }
 
@@ -128,74 +76,27 @@ body {
 	margin-left: 81%;
 }
 
-.more a {
-	color: #7E7E7E;
-	transition: 0.15s;
-}
-
-.more:hover a {
-	color: #90DDEB;
-	filter: drop-shadow(0px 0px 9px #01C8EE);
-}
-
 .line {
-	background-color: #FA7EFF;
 	height: 6px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	margin-right: 59.5%;
-	border: 1px solid rgba(245, 0, 245, 0.5);
 	border-radius: 8px;
-	filter: drop-shadow(0px 0px 8px #F500FE);
-
 }
 
 .intro .line {
 	margin-right: 16.2%;
 }
 
-/*background*/
-.bg {
-	position: fixed;
-	width: 100%;
-	/*margin-right: 1%;
-	margin-left: 1%;*/
-	z-index: -999;
-}
-
-@media all and (min-width: 768px){
-	.bgp {
-	display: none;
-	}
-}
 
 
 @media all and (max-width: 767px) {
-	.container {
-		margin: 0px auto;
-	}
-
-	.bg{
-		display: none;
-	}
-
-	.bgp {
-	position: fixed;
-	width: 100%;
-	/*margin-right: 1%;
-	margin-left: 1%;*/
-	z-index: -999;
-	}
-
 	.more {
 	margin-top: 10px;
 	margin-left: 80%;
 	}
 
 }
-
-/*akhir background*/
-
 
 /*akhir all*/
 
@@ -209,7 +110,6 @@ body {
 	position: fixed;
 	z-index: 999;
 	width: 100%;
-	background-color: rgb(0 0 0);
 	align-content: center;
 
 }
@@ -233,16 +133,11 @@ body {
 	display: none;
 }
 
-.logo h3 {
-	color: #FA7EFF;
-	filter: drop-shadow(0px 0px 9px #F500FE);
-}
-
 
 .qa {
 	display: flex;
-	/*background-color: yellow;*/
-	align-self: center;
+/*	background-color: yellow;*/
+	align-items: center;
 	justify-content:space-around;
 }
 
@@ -254,17 +149,22 @@ body {
 /*	background-color: lime;*/
 	padding: 5px;
 	border-radius: 5px;
-	color: #7E7E7E;
-
-	transition: 0.15s;
 }
 
+.qa .themeButton {
+	height: 25px;
+	line-height: 25px;
+	padding: 10px;
+	text-align: center;
 
-.qabutton:hover {
-	color: #90DDEB;
-	filter: drop-shadow(0px 0px 9px #01C8EE);
-	transform: scale(1.1);
+	display: flex;
+	justify-content: center;
 }
+
+select {
+	width: 100%;
+}
+
 
 @media all and (max-width: 767px){
 	.nav {
@@ -283,20 +183,24 @@ body {
 	}
 
 	.qa {
-		background-color: black;
 		display: flex;
 		width: 40%;
-		height: 279px;
+		height: 185px;
 		box-sizing: border-box;
 		flex-direction: column;
 		align-self: space-between; 
-		margin-top: 240px;
+		/*margin-top: 240px;*/
 		position: absolute;
+		top: 45px;
 		right: -40%;
 		z-index: 9999;
 		text-align: center;
 
 		transition: 0.5s;
+	}
+
+	.qa .themeButton {
+		width: 80%;
 	}
 
 	.show { 
@@ -306,7 +210,9 @@ body {
 
 	.qa div img {
 		display: inline-block;
-		margin-right: -29%;
+		position: absolute;
+		right:  25.4%;
+		top: 0%;
 	}
 
 }
@@ -319,7 +225,6 @@ body {
 /*awal intro*/
 .intro {
 	height: 319px;
-	margin-bottom: 96px;
 	padding-top: 47px;
 	box-sizing: border-box;
 	/*background-color: salmon;*/
@@ -335,6 +240,7 @@ body {
 
 .rizkia {
 	/*background-color: black;*/
+	margin-top: 50px;
 	align-self: center;
 	/*justify-self: center;*/
 	margin-left: 17%;
@@ -346,6 +252,7 @@ div .rizkia p {
 
 .hello {
 	/*background-color: lime;*/
+	margin-top: 50px;
 	align-self: center;
 	justify-content:;
 
@@ -374,6 +281,8 @@ p.hellotext  {
 
 @media all and (max-width: 767px){
 	.intro {
+		padding-top: 100px;
+		margin-bottom: 100px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -390,12 +299,10 @@ p.hellotext  {
 	}
 
 	.more.bio {
-	/*grid-area: more;*/
 	/*background-color: aqua;*/
 	margin-top: 20px;
 	margin-right: 20%;
-
-}
+	}
 
 }
 /*akhir intro*/
@@ -407,7 +314,6 @@ p.hellotext  {
 /*service bar*/
 .service {
 	margin-bottom: 96px;
-	background-color: rgba(0, 0, 0, 0.5);
 	/*background-color: salmon;*/
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -416,53 +322,14 @@ p.hellotext  {
 .skillbox {
 	width: 79%;
 	height: 228px;
-
-	margin-top: 30px;
-	margin-bottom: 30px ;
-	margin-left: 6.25%;
+	margin: 30px auto;
 	padding-top: 8.7%;
 
-	border: 5px solid #7E7E7E;
-	border-radius: 16px;
 	box-sizing: border-box;
 
 /*	background-color: black;*/
 	text-align: center;	
-	
-	color: #7E7E7E;
-
-	transition: 0.3s;
 }
-
-.skillbox h1, .skillbox h3 {
-	color:#7E7E7E;
-}
-
-
-.skillbox:hover{
-	border: 5px solid #90DDEB;
-	filter: drop-shadow(0px 0px 9px #01C8EE);
-	transform: scale(1.1);
-}
-
-.skillbox.b:hover {
-	border: 5px solid #E98673;
-	filter: drop-shadow(0px 0px 9px #EE2701);
-	transform: scale(1.1);
-}
-
-.skillbox:hover h1, .skillbox:hover h3 {
-	color:#90DDEB;
-	filter: drop-shadow(0px 0px 9px #01C8EE);
-
-}
-
-.skillbox.b:hover h1, .skillbox.b:hover h3 {
-	color:#E98673;
-	filter: drop-shadow(0px 0px 9px #EE2701);
-
-}
-
 
 @media all and (max-width: 767px){
 	.service {
@@ -507,9 +374,6 @@ p.hellotext  {
 
 }
 
-.workthumb a {
-	font-size: 17px;
-}
 
 .workthumb:hover {
 	transform: scale(1.1);
@@ -550,7 +414,8 @@ p.hellotext  {
 	}
 
 	.visit {
-		justify-items: center;
+		justify-items: end;
+		margin-right: 30px;
 	}
 }
 /*akhir my work*/
@@ -562,7 +427,6 @@ p.hellotext  {
 
 .reviewdisplay {
 	margin-top: 30px;
-	background-color: rgba(0, 0, 0, 0.5);
 	/*background-color: salmon;*/
 	padding-top: 30px;
 	padding-left: 30px;
@@ -582,11 +446,6 @@ p.hellotext  {
 	margin-bottom: 30px;
 	/*background-color: yellow;*/
 	padding: 5px;
-	color: white;
-
-	border-radius: 16px;
-	border: 5px solid #90DDEB;
-	filter: drop-shadow(0px 0px 9px #01C8EE);
 }
 
 @media all and (max-width: 767px) {

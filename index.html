@@ -6,20 +6,42 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="style.css">
 
+<!-- regular -->
+	<!-- quicksand -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 
+
+
+
+<!-- neon -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link class="tema" rel="stylesheet" type="text/css" href="darkUI.css">
+
+
+
+
+
+
+
+
 
 </head>
 <body>
 
 	<!-- awal background -->
-	<img class="bg" src="neoncitybackground.png">
-	<img class="bgp" src="potrait.png" > 
+	<div class="background" style="display: none;">
+		<img class="bg" src="neoncitybackground.png">
+		<img class="bgp" src="potrait.png" > 
+	</div>
+	
 	<!-- akhir background -->
 
 
@@ -34,11 +56,20 @@
 
 			<div class="qa">
 
-				<div><img src="hammenu.png" class="hammenu"></div>
+				<!-- <div><img src="hammenu.png" class="hammenu"></div> -->
 				<a href="#introduction" class="qabutton">Profiles</a>
 				<a href="#mywork" class="qabutton">My works</a>
 				<a href="#reviews" class="qabutton">Reviews</a>
+
+				<div class="themeButton">
+					<select>
+						<option class="dark">Dark</option>
+						<option class="neon">Neon</option>
+					</select>
+				</div>
+
 			</div>
+			
 		</div>
 
 	</div>
@@ -65,7 +96,6 @@
 			
 		</div>
 		<div class="more bio"> <a href="id page/id page.html">More</a></div>
-
 	</div>
 	<!-- akhri intro -->
 
